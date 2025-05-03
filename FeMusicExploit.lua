@@ -180,7 +180,7 @@ local function TSXRC_fake_script() -- PlayButton.Script
     
     -- Hook up button functionality
     playButton.MouseButton1Click:Connect(function()
-        local remote = findRemoteEvent("AC6_FE_Sounds")
+        local remote = findRemoteEvent("VehicleSoundsEvent")
         if remote then
             local musicId = textBox.Text
             local volume = tonumber(volumeBox.Text) or 1
