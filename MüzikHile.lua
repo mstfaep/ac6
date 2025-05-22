@@ -1,295 +1,126 @@
-local fix = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
-local Top = Instance.new("Frame")
-local ZinniaPanelText = Instance.new("TextLabel")
-local ZInniaImage = Instance.new("ImageLabel")
-local PlayButton = Instance.new("TextButton")
-local TextBox = Instance.new("TextBox")
-local AC6MUSICVUILNTEXT = Instance.new("TextLabel")
-local VolumeBox = Instance.new("TextBox")
-local PitchBox = Instance.new("TextBox")
-local Credits = Instance.new("TextLabel")
- 
--- Properties
- 
-fix.Name = "fix"
-fix.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-fix.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
- 
-Main.Name = "Main"
-Main.Parent = fix
-Main.BackgroundColor3 = Color3.new(0.145098, 0.145098, 0.145098)
-Main.BorderColor3 = Color3.new(0, 0, 0)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.341115743, 0, 0.492411464, 0)
-Main.Size = UDim2.new(0, 471, 0, 297)
- 
-Top.Name = "Top"
-Top.Parent = Main
-Top.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-Top.BorderColor3 = Color3.new(0, 0, 0)
-Top.BorderSizePixel = 0
-Top.Position = UDim2.new(-2.120713e-05, 0, 0, 0)
-Top.Size = UDim2.new(0, 471, 0, 26)
- 
-ZinniaPanelText.Name = "ZinniaPanelText"
-ZinniaPanelText.Parent = Top
-ZinniaPanelText.BackgroundColor3 = Color3.new(1, 1, 1)
-ZinniaPanelText.BackgroundTransparency = 1
-ZinniaPanelText.BorderColor3 = Color3.new(0, 0, 0)
-ZinniaPanelText.BorderSizePixel = 0
-ZinniaPanelText.Position = UDim2.new(-0.00166414748, 0, 0.0250760596, 0)
-ZinniaPanelText.Size = UDim2.new(0, 112, 0, 24)
-ZinniaPanelText.Font = Enum.Font.SourceSans
-ZinniaPanelText.Text = "xD Panel"
-ZinniaPanelText.TextColor3 = Color3.new(1, 1, 1)
-ZinniaPanelText.TextSize = 20
-ZinniaPanelText.TextWrapped = true
- 
-ZInniaImage.Name = "ZInniaImage"
-ZInniaImage.Parent = Top
-ZInniaImage.BackgroundColor3 = Color3.new(1, 1, 1)
-ZInniaImage.BackgroundTransparency = 1
-ZInniaImage.BorderColor3 = Color3.new(0, 0, 0)
-ZInniaImage.BorderSizePixel = 0
-ZInniaImage.Position = UDim2.new(-0.182590231, 0, 2.73076916, 0)
-ZInniaImage.Size = UDim2.new(0, 247, 0, 226)
-ZInniaImage.Image = "rbxassetid://7148691919"
- 
-PlayButton.Name = "PlayButton"
-PlayButton.Parent = Top
-PlayButton.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-PlayButton.BorderColor3 = Color3.new(0, 0, 0)
-PlayButton.BorderSizePixel = 0
-PlayButton.Position = UDim2.new(0.53927815, 0, 5.69230747, 0)
-PlayButton.Size = UDim2.new(0, 202, 0, 45)
-PlayButton.Font = Enum.Font.SourceSans
-PlayButton.Text = "Başlat"
-PlayButton.TextColor3 = Color3.new(1, 1, 1)
-PlayButton.TextSize = 40
-PlayButton.TextWrapped = true
- 
-TextBox.Parent = Top
-TextBox.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-TextBox.BorderColor3 = Color3.new(0, 0, 0)
-TextBox.BorderSizePixel = 0
-TextBox.Position = UDim2.new(0.53927815, 0, 3.34615374, 0)
-TextBox.Size = UDim2.new(0, 202, 0, 50)
-TextBox.ClearTextOnFocus = false
-TextBox.Font = Enum.Font.SourceSans
-TextBox.PlaceholderText = "Müzik ID"
-TextBox.Text = ""
-TextBox.TextColor3 = Color3.new(1, 1, 1)
-TextBox.TextSize = 35
-TextBox.TextWrapped = true
- 
-AC6MUSICVUILNTEXT.Name = "AC6 MUSIC VUILN TEXT"
-AC6MUSICVUILNTEXT.Parent = Top
-AC6MUSICVUILNTEXT.BackgroundColor3 = Color3.new(1, 1, 1)
-AC6MUSICVUILNTEXT.BackgroundTransparency = 1
-AC6MUSICVUILNTEXT.BorderColor3 = Color3.new(0, 0, 0)
-AC6MUSICVUILNTEXT.BorderSizePixel = 0
-AC6MUSICVUILNTEXT.Position = UDim2.new(0.54610616, 0, 1.5635376, 0)
-AC6MUSICVUILNTEXT.Size = UDim2.new(0, 195, 0, 33)
-AC6MUSICVUILNTEXT.Font = Enum.Font.SourceSans
-AC6MUSICVUILNTEXT.Text = "AC6 Müzik Hile xD"
-AC6MUSICVUILNTEXT.TextColor3 = Color3.new(1, 1, 1)
-AC6MUSICVUILNTEXT.TextScaled = true
-AC6MUSICVUILNTEXT.TextSize = 20
-AC6MUSICVUILNTEXT.TextWrapped = true
- 
-VolumeBox.Name = "VolumeBox"
-VolumeBox.Parent = Top
-VolumeBox.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-VolumeBox.BorderColor3 = Color3.new(0, 0, 0)
-VolumeBox.BorderSizePixel = 0
-VolumeBox.Position = UDim2.new(0.253112912, 0, 3.34615374, 0)
-VolumeBox.Size = UDim2.new(0, 120, 0, 50)
-VolumeBox.ClearTextOnFocus = false
-VolumeBox.Font = Enum.Font.SourceSans
-VolumeBox.PlaceholderText = "SES"
-VolumeBox.Text = ""
-VolumeBox.TextColor3 = Color3.new(1, 1, 1)
-VolumeBox.TextSize = 35
-VolumeBox.TextWrapped = true
- 
-PitchBox.Name = "PitchBox"
-PitchBox.Parent = Top
-PitchBox.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-PitchBox.BorderColor3 = Color3.new(0, 0, 0)
-PitchBox.BorderSizePixel = 0
-PitchBox.Position = UDim2.new(0.253112912, 0, 5.69230747, 0)
-PitchBox.Size = UDim2.new(0, 120, 0, 45)
-PitchBox.ClearTextOnFocus = false
-PitchBox.Font = Enum.Font.SourceSans
-PitchBox.PlaceholderText = "HIZ"
-PitchBox.Text = ""
-PitchBox.TextColor3 = Color3.new(1, 1, 1)
-PitchBox.TextSize = 35
-PitchBox.TextWrapped = true
- 
-Credits.Name = "Credits"
-Credits.Parent = Top
-Credits.BackgroundColor3 = Color3.new(1, 1, 1)
-Credits.BackgroundTransparency = 1
-Credits.BorderColor3 = Color3.new(0, 0, 0)
-Credits.BorderSizePixel = 0
-Credits.Position = UDim2.new(0.47179696, 0, 10.4866142, 0)
-Credits.Size = UDim2.new(0, 249, 0, 24)
-Credits.Font = Enum.Font.SourceSans
-Credits.Text = "Developed by xD Lethius"
-Credits.TextColor3 = Color3.new(1, 1, 1)
-Credits.TextSize = 20
-Credits.TextWrapped = true
- 
--- Scripts
- 
-local function TSXRC_fake_script() -- PlayButton.Script 
-    local script = Instance.new('Script', PlayButton)
- 
-    local playButton = script.Parent
-    local screenGui = game.Players.LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("fix")
-    local topFrame = screenGui:WaitForChild("Main"):WaitForChild("Top")
-    local textBox = topFrame:WaitForChild("TextBox")
-    local volumeBox = topFrame:WaitForChild("VolumeBox")
-    local pitchBox = topFrame:WaitForChild("PitchBox")
-    
-    -- Function to find the remote event
-    local function findRemoteEvent(name)
-        local replicatedStorage = game:GetService("ReplicatedStorage")
-        local workspace = game:GetService("Workspace")
-        for _, parent in ipairs({replicatedStorage, workspace}) do
-            for _, child in ipairs(parent:GetDescendants()) do
-                if child:IsA("RemoteEvent") and child.Name == name then
-                    return child
-                end
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+
+local screenMessages = {
+    "HACKED BY XD 🥴",       "WE FUCKED ROBLOX 🤪",
+    "WE LOVE NİGGA 😁", "ROBLOX İS NİGGA 🥔", "WE LOVE PORN 😁"
+}
+
+local notificationMessages = {
+    "HACKED BY XD", "HACKED BY XD",
+    "HACKED BY XD", "HACKED BY XD"
+}
+
+local function createScreenGui(player)
+    local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+    gui.Name = "ScreenEffect"
+    gui.IgnoreGuiInset = true
+    gui.ResetOnSpawn = false
+
+    -- Kırmızı Arkaplan
+    local bg = Instance.new("Frame", gui)
+    bg.Size = UDim2.new(1, 0, 1, 0)
+    bg.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+    bg.BackgroundTransparency = 0.8
+    bg.BorderSizePixel = 0
+
+    -- Hareketli yazılar
+    for i = 1, 40 do
+        local label = Instance.new("TextLabel", gui)
+        label.Size = UDim2.new(0, 200, 0, 30)
+        label.BackgroundTransparency = 1
+        label.TextColor3 = Color3.new(1, 1, 1)
+        label.Font = Enum.Font.Code
+        label.TextScaled = true
+        label.Text = screenMessages[math.random(#screenMessages)]
+        label.Position = UDim2.new(math.random(), 0, math.random(), 0)
+
+        coroutine.wrap(function()
+            while true do
+                TweenService:Create(label, TweenInfo.new(0.5), {
+                    Position = UDim2.new(math.random(), 0, math.random(), 0)
+                }):Play()
+                TweenService:Create(label, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true), {
+                    TextTransparency = 0.4
+                }):Play()
+                wait(1)
             end
-        end
-        return nil
+        end)()
     end
-    
-    -- Function to generate a random sound name
-    local function generateRandomName()
-        local chars = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        local name = ""
-        for i = 1, math.random(5, 10) do
-            name = name .. chars:sub(math.random(1, #chars), math.random(1, #chars))
-        end
-        return name
-    end
-    
-    -- Hook up button functionality
-    playButton.MouseButton1Click:Connect(function()
-        local remote = findRemoteEvent("VehicleSoundsEvent")
-        if remote then
-            local musicId = textBox.Text
-            local volume = tonumber(volumeBox.Text) or 1
-            local pitch = tonumber(pitchBox.Text) or 1
-            local assetId = "rbxassetid://" .. musicId
-            local randomName = generateRandomName()
-    
-            remote:FireServer("newSound", randomName, workspace, assetId, pitch, volume, true)
-            remote:FireServer("playSound", randomName)
-        else
-            warn("Couldn't find AC6 RemoteEvent")
-        end
-    end)
-        
 end
-coroutine.wrap(TSXRC_fake_script)()
-local function IHBC_fake_script() -- VolumeBox.Script 
-    local script = Instance.new('Script', VolumeBox)
- 
-    local volumeBox = script.Parent
-    
-    -- I wonder what this one does! oh yeah it handles the volume!!!!!!!!!!!!!!!!!!
-    volumeBox.FocusLost:Connect(function()
-        local volume = tonumber(volumeBox.Text)
-        if volume and volume >= 0 and volume <= 1 then
-            print("Volume set to: " .. volume)
-        else
-            print("Invalid volume input.")
+
+local function createNotifications(player)
+    local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+    gui.Name = "NotificationUI"
+    gui.IgnoreGuiInset = true
+    gui.ResetOnSpawn = false
+
+    coroutine.wrap(function()
+        while true do
+            local box = Instance.new("Frame", gui)
+            box.Size = UDim2.new(0, 300, 0, 50)
+            box.Position = UDim2.new(1, -10, 1, -10)
+            box.AnchorPoint = Vector2.new(1, 1)
+            box.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+            box.BackgroundTransparency = 0.1
+
+            local txt = Instance.new("TextLabel", box)
+            txt.Size = UDim2.new(1, -20, 1, -20)
+            txt.Position = UDim2.new(0, 10, 0, 10)
+            txt.BackgroundTransparency = 1
+            txt.TextColor3 = Color3.new(1, 1, 1)
+            txt.Font = Enum.Font.Code
+            txt.TextScaled = true
+            txt.Text = notificationMessages[math.random(#notificationMessages)]
+
+            wait(4)
+
+            TweenService:Create(box, TweenInfo.new(1), {
+                Position = box.Position + UDim2.new(0, 0, 0, 60),
+                BackgroundTransparency = 1
+            }):Play()
+            TweenService:Create(txt, TweenInfo.new(1), {
+                TextTransparency = 1
+            }):Play()
+
+            wait(1)
+            box:Destroy()
         end
-    end)
-    
+    end)()
 end
-coroutine.wrap(IHBC_fake_script)()
-local function OCBZ_fake_script() -- PitchBox.Script 
-    local script = Instance.new('Script', PitchBox)
- 
-    local pitchBox = script.Parent
-    
-    -- It handles pitch input what the fuck did you expect
-    pitchBox.FocusLost:Connect(function()
-        local pitch = tonumber(pitchBox.Text)
-        if pitch and pitch >= 0 and pitch <= 2 then
-            print("Pitch set to: " .. pitch)
-        else
-            print("Invalid pitch input.")
-        end
-    end)
-    
-end
-coroutine.wrap(OCBZ_fake_script)()
-local function XJAVIHQ_fake_script() -- Top.Script 
-    local script = Instance.new('Script', Top)
- 
-    local UserInputService = game:GetService("UserInputService")
-    local runService = game:GetService("RunService")
-    
-    local gui = script.Parent.Parent -- Now dragging the parent of script.Parent
-    local dragger = script.Parent -- The UI element that will be clicked to drag
-    
-    local dragging
-    local dragInput
-    local dragStart
-    local startPos
-    
-    function Lerp(a, b, m)
-        return a + (b - a) * m
-    end
-    
-    local lastMousePos
-    local lastGoalPos
-    local DRAG_SPEED = 8 -- The speed of the UI drag
-    
-    function Update(dt)
-        if not startPos then return end
-        if not dragging and lastGoalPos then
-            gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), 
-                startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
-            return 
-        end
-    
-        local delta = lastMousePos - UserInputService:GetMouseLocation()
-        local xGoal = startPos.X.Offset - delta.X
-        local yGoal = startPos.Y.Offset - delta.Y
-        lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
-        gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), 
-            startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
-    end
-    
-    dragger.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-            dragging = true
-            dragStart = input.Position
-            startPos = gui.Position
-            lastMousePos = UserInputService:GetMouseLocation()
-    
-            input.Changed:Connect(function()
-                if input.UserInputState == Enum.UserInputState.End then
-                    dragging = false
-                end
+
+local function spamChat(player)
+    coroutine.wrap(function()
+        while true do
+            local success, err = pcall(function()
+                game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("HACKED BY XD", "All")
             end)
+            wait(1.5)
         end
-    end)
-    
-    dragger.InputChanged:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-            dragInput = input
-        end
-    end)
-    
-    runService.Heartbeat:Connect(Update)
+    end)()
 end
-coroutine.wrap(XJAVIHQ_fake_script)()
+
+local function playMusic()
+    local sound = Instance.new("Sound", workspace)
+    sound.SoundId = "rbxassetid://1839247124"
+    sound.Volume = 3
+    sound.Looped = true
+
+    sound.Loaded:Connect(function()
+        sound:Play()
+    end)
+end
+
+for _, player in pairs(Players:GetPlayers()) do
+    createScreenGui(player)
+    createNotifications(player)
+    spamChat(player)
+end
+
+Players.PlayerAdded:Connect(function(player)
+    createScreenGui(player)
+    createNotifications(player)
+    spamChat(player)
+end)
+
+playMusic()
